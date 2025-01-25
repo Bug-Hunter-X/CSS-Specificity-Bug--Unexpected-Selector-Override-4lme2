@@ -1,0 +1,16 @@
+/* bugSolution.css */
+#myElement {
+  color: blue; /* This should take precedence */
+}
+
+.myClass {
+  color: red; /* This is more specific and should override */
+}
+
+.myClass.anotherClass { /* avoid this, refactor for clarity */
+  color: green; /* This should be avoided if possible */
+}
+/* In some cases you may need to use !important; However this is strongly discouraged */
+#myElement {
+  color: blue !important;
+}
